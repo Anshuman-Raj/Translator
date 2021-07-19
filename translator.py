@@ -269,7 +269,7 @@ initial_c = Input(shape=(LATENT_DIM_DECODER,), name='c0')
 context_last_word_concat_layer = Concatenate(axis=2)
 
 
-# Unlike previous seq2seq, we cannot get the output
+# We cannot get the output
 # all in one step
 # Instead we need to do Ty steps
 # And in each of those steps, we need to consider
@@ -380,7 +380,7 @@ plt.show()
 
 
 ##### Make predictions #####
-# As with the poetry example, we need to create another model
+# We need to create another model
 # that can take in the RNN state and previous word as input
 # and accept a T=1 sequence.
 
